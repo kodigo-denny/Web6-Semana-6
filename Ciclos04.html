@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let N = parseInt(prompt("Ingrese la cantidad de estudiantes"))
+        let nota
+        let suma = 0, promedio
+
+        for(let i = 1; i <= N; i++){
+            do{
+                nota = Number(prompt("Alumno numero: "+i+"\nIngrese la nota: "))      
+            }while(nota < 0 || nota > 10  )
+            
+            suma = suma + nota
+        }
+
+        promedio = suma/N
+
+        alert("El promedio de los alumnos es: " + promedio)
+        alert("El promedio de los alumnos es: " + Math.round(promedio))
+        alert("El promedio de los alumnos es: " + parseInt(promedio))
+        alert("El promedio de los alumnos es: " + promedio.toFixed(2))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

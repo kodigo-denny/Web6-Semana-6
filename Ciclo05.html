@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let aprobados = 0, reprobados = 0
+        let nota
+
+        for(let i = 1; i <= 3; i++){
+            do{
+                nota = Number(prompt("Alumno numero: " + i + "\nIngrese una nota: "))
+            }while(nota < 0 || nota > 10)
+            
+            if( nota >= 6)
+                aprobados++
+            else
+                reprobados++
+        }
+
+        alert("Cantidad de aprobados: " + aprobados)
+        alert("Cantidad de reprobados: " + reprobados)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
